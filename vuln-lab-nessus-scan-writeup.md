@@ -179,11 +179,7 @@ Credentials: SSH credentials for `labadmin` (and optionally `testuser`) added un
 
 ## 6. Findings
 
-<img width="2323" height="1245" alt="Screenshot 2026-07-09 174256" src="https://github.com/user-attachments/assets/8781e54c-d746-4e1e-bd83-c26397f9156e" />
-
-| Finding | Severity | Plugin/CVE ref | Notes |
-|---|---|---|---|
-| — | — | — | — |
+<img width="2336" height="1267" alt="Screenshot 2026-07-09 174840" src="https://github.com/user-attachments/assets/1fab88ca-6886-48fd-871e-31e2170ba972" />
 
 ---
 
