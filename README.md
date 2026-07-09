@@ -35,6 +35,16 @@ Workspace: `law-casalab-sentinel` | Resource Group: `rg-sentinel` | Region: East
 | SSH Brute Force | T1110.001 | Linux auth.log | Validated by query |
 | Linux Account Lifecycle Abuse | T1136.001 / T1548.003 / T1070 | Linux audit logs | Incident confirmed |
 
+## Detection Validation
+
+Detection rules are only as good as the evidence they've been tested against. This section documents hands-on validation exercises confirming the analytics rules and scanning tooling above actually catch what they claim to.
+
+| Exercise | Focus | Write-up |
+|---|---|---|
+| Nessus vuln-lab scan | Deliberately misconfigured Azure VM (outdated Samba, anonymous FTP, weak SSH config, weak local credentials) scanned before/after hardening changes to validate detection coverage | [`docs/validation/vuln-lab-nessus-scan-writeup.md`](docs/validation/vuln-lab-nessus-scan-writeup.md) |
+
+**Approach:** rather than trusting a clean scan result at face value, target infrastructure is deliberately built with known weaknesses, isolated in its own network segment (no public IP, NSG deny-by-default, JIT-scoped management access), scanned, then hardened and re-scanned to confirm findings close out. Maps to the NIST CSF Detect function, with Respond/Recover as a planned follow-on.
+
 ## Planned next
 
 - Version-controlled rule definitions (`rules/<name>/rule.yaml` + `query.kql`) with a GitHub Actions workflow to deploy via ARM on merge to `main` — not yet built, noted honestly rather than implied as done
