@@ -179,7 +179,7 @@ Credentials: SSH credentials for `labadmin` (and optionally `testuser`) added un
 
 ## 6. Findings
 
-*(To be completed once the post-change scan finishes — fill in with actual Nessus plugin IDs, severities, and CVE references pulled from the scan report.)*
+<img width="2323" height="1245" alt="Screenshot 2026-07-09 174256" src="https://github.com/user-attachments/assets/8781e54c-d746-4e1e-bd83-c26397f9156e" />
 
 | Finding | Severity | Plugin/CVE ref | Notes |
 |---|---|---|---|
